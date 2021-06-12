@@ -1,3 +1,3 @@
-import Shops from './Shops';
+import Logos from './Logos';
 
-export default Shops;
+export default Logos;

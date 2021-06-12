@@ -4,17 +4,20 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 8%;
-
   background: #f8f8f8;
 `;
 
 const Logo = styled.img`
   margin: 30px 0;
+  @media (max-width: 768px) {
+    max-width: 150px;
+    margin: 15px 0;
+  }
 `;
 
 const ImgBack = styled.img`
   @media (max-width: 768px) {
-    display: none;
+    max-width: 400px;
   }
   top: 0;
   right: 0;

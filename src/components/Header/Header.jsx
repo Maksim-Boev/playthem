@@ -5,9 +5,12 @@ import background from '../../assets/img/background.png';
 import { Wrapper, ImgBack } from './StyledComponets';
 import Drawer from '../Drawer';
 import StartText from './StartText';
-import { StartBtnWrapper, WrapperStartBlock } from '../../StyledComponents';
 import StartBtn from '../Buttons/StartBtn';
 import WatchBtn from '../Buttons/WatchBtn/WatchBtn';
+import {
+  WrapperStartBlock,
+  StartBtnWrapper
+} from './StartText/StyledComponents';
 
 const Header = () => {
   return (

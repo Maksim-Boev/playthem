@@ -7,7 +7,14 @@ import {
 } from './StyledComponents';
 
 const Drawer = () => {
-  const ticketList = ['about', 'contact'];
+  const ticketList = [
+    'Our Games',
+    'Platform',
+    'Use Case',
+    'Pricing',
+    'Blog',
+    'Log In'
+  ];
   const [ticketNumber, setTicketNumber] = useState(false);
   const [toggle, setToggle] = useState(false);
 

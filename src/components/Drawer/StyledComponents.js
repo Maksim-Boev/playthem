@@ -4,14 +4,14 @@ export const TicketList = styled.ul`
   padding: 0;
   margin: 0;
   ${({ open }) => {
-    return open ? 'left: 0' : 'left: -300px';
+    return open ? 'right: 0' : 'right: -300px';
   }};
-  transition: left 0.22s ease-in;
+  transition: right 0.22s ease-in;
   position: fixed;
   background-color: #fff;
   height: 100%;
   width: 300px;
-  z-index: 1;
+  z-index: 3;
 `;
 
 export const Backdrop = styled.div`
@@ -20,30 +20,36 @@ export const Backdrop = styled.div`
   width: 100%;
   height: 100vh;
   left: 0;
+  z-index: 2;
 `;
 
 export const MenuToggle = styled.i`
   margin-top: 20px;
   position: fixed;
   ${({ open }) => {
-    return open ? 'left: 320px' : 'left: 40px';
+    return open ? 'right: 320px' : 'right: 7%';
   }};
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   color: #000;
-  transition: opacity, left 0.22s ease-in;
+  transition: opacity, right 0.22s ease-in;
   z-index: 100;
   :hover {
     opacity: 0.7;
+  }
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
 
 export const TicketLiStyle = styled.li`
   list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
   margin-top: 10px;
   margin-left: 20px;
   cursor: pointer;
   ${({ ticketMarker }) => {
-    return ticketMarker ? 'color: red' : 'color: black';
+    return ticketMarker ? 'color: #34afe7' : 'color: black';
   }}
 `;

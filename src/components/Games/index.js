@@ -1,3 +1,3 @@
-import PreviewGame from './PreviewGame';
+import Games from './Games';
 
-export default PreviewGame;
+export default Games;

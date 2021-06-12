@@ -6,9 +6,15 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding: 0 14%;
   z-index: 1;
+  @media (max-width: 768px) {
+    padding: 0 7%;
+  }
 `;
 
 export const NavList = styled.ul`
+  @media (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   height: 40px;
   justify-content: space-between;
