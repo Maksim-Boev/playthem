@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyleIcon = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   margin-top: 70px;
 `;
 

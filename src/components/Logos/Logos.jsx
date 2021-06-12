@@ -29,8 +29,24 @@ const images = [
     src: ebay
   },
   {
-    link: 'https://www.ebay.com/"',
+    link: 'https://www.ebay.com/',
     src: ebayProStores
+  },
+  {
+    link: 'https://www.shopify.com/',
+    src: shopify
+  },
+  {
+    link: 'https://vendiapp.com/',
+    src: vendi
+  },
+  {
+    link: 'https://www.volusion.com/',
+    src: volusion
+  },
+  {
+    link: 'https://www.zen-cart.com/',
+    src: zencart
   }
 ];
 
@@ -44,20 +60,6 @@ const Logos = () => {
             <Img src={src} alt="icon" />
           </WrapperIcon>
         ))}
-      </StyleIcon>
-      <StyleIcon>
-        <WrapperIcon href="https://www.shopify.com/">
-          <Img src={shopify} alt="icon" />
-        </WrapperIcon>
-        <WrapperIcon href="https://vendiapp.com/">
-          <Img src={vendi} alt="icon" />
-        </WrapperIcon>
-        <WrapperIcon href="https://www.volusion.com/">
-          <Img src={volusion} alt="icon" />
-        </WrapperIcon>
-        <WrapperIcon href="https://www.zen-cart.com/">
-          <Img src={zencart} alt="icon" />
-        </WrapperIcon>
       </StyleIcon>
     </Wrapper>
   );
