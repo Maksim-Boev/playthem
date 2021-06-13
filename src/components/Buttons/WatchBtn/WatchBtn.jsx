@@ -1,8 +1,8 @@
 import React from 'react';
-import Btn from './StyledComponents';
+import StyledWatchBtn from './StyledComponents';
 
 const WatchBtn = () => {
-  return <Btn>Watch Video</Btn>;
+  return <StyledWatchBtn>Watch Video</StyledWatchBtn>;
 };
 
 export default WatchBtn;

@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 `;
 
 export const StylePreviewGames = styled.div`
@@ -13,4 +14,8 @@ export const StylePreviewGames = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 100px;
+  @media (max-width: 570px) {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
 `;

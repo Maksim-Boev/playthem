@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import {
-  TicketList,
+  MenuList,
   Backdrop,
   MenuToggle,
-  TicketLiStyle
+  MenuListItemStyle
 } from './StyledComponents';
 
 const Drawer = () => {
-  const ticketList = [
+  const menuList = [
     'Our Games',
     'Platform',
     'Use Case',
@@ -15,21 +15,21 @@ const Drawer = () => {
     'Blog',
     'Log In'
   ];
-  const [ticketNumber, setTicketNumber] = useState(false);
+  const [menuNumber, setMenuNumber] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const link = ticketList.map((index) => {
+  const link = menuList.map((index) => {
     return (
-      <TicketLiStyle
+      <MenuListItemStyle
         key={index.toString()}
-        ticketMarker={ticketNumber === index}
+        ticketMarker={menuNumber === index}
         onClick={() => {
           setToggle(!toggle);
-          setTicketNumber(index);
+          setMenuNumber(index);
         }}
       >
         {index}
-      </TicketLiStyle>
+      </MenuListItemStyle>
     );
   });
 
@@ -41,7 +41,7 @@ const Drawer = () => {
           onClick={() => setToggle(!toggle)}
           className={toggle ? 'fa fa-times' : 'fa fa-bars'}
         />
-        <TicketList open={toggle}>{link}</TicketList>
+        <MenuList open={toggle}>{link}</MenuList>
       </div>
       {toggle && <Backdrop onClick={() => setToggle(!toggle)} />}
     </>

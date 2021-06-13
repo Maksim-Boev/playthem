@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Text = styled.div`
+export const Text = styled.div`
   text-align: center;
   padding: 30px 0;
   font-family: 'Montserrat', sans-serif;
@@ -9,7 +9,7 @@ const Text = styled.div`
   font-size: 16px;
 `;
 
-const Btn = styled.div`
+export const Btn = styled.div`
   ${({ active }) => {
     return active
       ? 'background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%); color: #ffffff;'
@@ -26,11 +26,14 @@ const Btn = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 `;
 
-export const SecondDescription = styled.div`
+export const Description = styled.div`
   max-width: 700px;
   padding: 30px 0;
   text-align: center;
@@ -38,18 +41,22 @@ export const SecondDescription = styled.div`
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  @media (max-width: 768px) {
+    padding: 7%;
+  }
 `;
 
-export const SecondTitle = styled.div`
-  margin: 130px 0 0;
+export const Title = styled.div`
+  margin-top: 130px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
 `;
 
 export const Img = styled.img`
   width: 100%;
 `;
-
-export { Text, Btn, Wrapper };

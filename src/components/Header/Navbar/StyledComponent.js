@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const NavList = styled.ul`
-  @media (max-width: 768px) {
+  @media (max-width: 825px) {
     display: none;
   }
   display: flex;

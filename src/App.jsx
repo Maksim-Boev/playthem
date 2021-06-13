@@ -1,5 +1,4 @@
 import React from 'react';
-import { SecondScreen } from './StyledComponents';
 import Header from './components/Header/Header';
 
 import Logos from './components/Logos';
@@ -9,10 +8,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <SecondScreen>
-        <Logos />
-        <Games />
-      </SecondScreen>
+      <Logos />
+      <Games />
     </>
   );
 };
