@@ -6,7 +6,9 @@ import Description from '../components/Description';
 const Pricing = () => {
   return (
     <>
-      <Title>Pop Up buildings price Straightforward, affordable pricing</Title>
+      <Title upperCase>
+        Pop Up buildings price Straightforward, affordable pricing
+      </Title>
       <Description>
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
