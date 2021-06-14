@@ -1,5 +1,5 @@
 import React from 'react';
-import frame from '../../../assets/img/frame.png';
+import frame from '../../../ shared/assets/img/frame.png';
 import { Text, Btn, Img, Wrapper } from './StyledComponents';
 
 const PreviewGame = ({ onActive, onClick }) => {

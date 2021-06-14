@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 8%;
+  padding-bottom: 13%;
   background: #f8f8f8;
 `;
 

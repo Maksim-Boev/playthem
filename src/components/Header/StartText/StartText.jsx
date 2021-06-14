@@ -1,5 +1,7 @@
 import React from 'react';
-import { Description, Title, Wrapper } from './StyledComponents';
+import { Wrapper } from './StyledComponents';
+import Title from '../../Title';
+import Description from '../../Description';
 
 const StartText = () => {
   return (

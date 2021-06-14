@@ -8,7 +8,7 @@ import {
   WrapperIcon
 } from './StyledComponents';
 
-import links from '../../constants/links';
+import links from '../../ shared/constants/links';
 
 const Logos = () => {
   return (

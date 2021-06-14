@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
-import background from '../../assets/img/background.png';
+import background from '../../ shared/assets/img/background.png';
 
 import { Wrapper, ImgBack } from './StyledComponets';
 import Drawer from '../Drawer';
@@ -16,7 +15,6 @@ const Header = () => {
   return (
     <Wrapper>
       <Drawer />
-      <Navbar />
       <WrapperStartBlock>
         <StartText />
         <StartBtnWrapper>
