@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { NavList, NavListItem, Wrapper } from './StyledComponent';
+import { NavList, NavListItem, Wrapper, Link } from './StyledComponent';
 import StartBtn from '../../Buttons/StartBtn';
-import logo from '../../../ shared/assets/img/logo.png';
+import logo from '../../../shared/assets/img/logo.png';
 import { Logo } from '../StyledComponets';
 
 const Navbar = () => {
@@ -16,15 +15,15 @@ const Navbar = () => {
   ];
   return (
     <Wrapper>
-      <NavLink to="/">
+      <Link to="/">
         <Logo src={logo} alt="logo" />
-      </NavLink>
+      </Link>
 
       <NavList>
         {navBtn.map((item) => (
-          <NavLink key={item} to={`/${item}`}>
-            <NavListItem key={item}>{item}</NavListItem>
-          </NavLink>
+          <Link key={item} to={`/${item}`}>
+            <NavListItem>{item}</NavListItem>
+          </Link>
         ))}
         <StartBtn />
       </NavList>

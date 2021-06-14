@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -33,4 +34,8 @@ export const NavListItem = styled.li`
   &:hover {
     cursor: pointer;
   }
+`;
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
 `;
