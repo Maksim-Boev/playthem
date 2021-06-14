@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   MenuList,
   Backdrop,
@@ -18,18 +19,20 @@ const Drawer = () => {
   const [menuNumber, setMenuNumber] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const link = menuList.map((index) => {
+  const link = menuList.map((item) => {
     return (
-      <MenuListItemStyle
-        key={index.toString()}
-        ticketMarker={menuNumber === index}
-        onClick={() => {
-          setToggle(!toggle);
-          setMenuNumber(index);
-        }}
-      >
-        {index}
-      </MenuListItemStyle>
+      <NavLink key={item} to={`/${item}`}>
+        <MenuListItemStyle
+          key={item.toString()}
+          ticketMarker={menuNumber === item}
+          onClick={() => {
+            setToggle(!toggle);
+            setMenuNumber(item);
+          }}
+        >
+          {item}
+        </MenuListItemStyle>
+      </NavLink>
     );
   });
 
@@ -41,6 +44,7 @@ const Drawer = () => {
           onClick={() => setToggle(!toggle)}
           className={toggle ? 'fa fa-times' : 'fa fa-bars'}
         />
+
         <MenuList open={toggle}>{link}</MenuList>
       </div>
       {toggle && <Backdrop onClick={() => setToggle(!toggle)} />}
