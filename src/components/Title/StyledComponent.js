@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   font-style: normal;
   color: #474747;
   font-weight: ${({ weight }) => weight || 300};
-  font-size: 60px;
+  font-size: ${({ size }) => size};
   @media (max-width: 470px) {
     font-size: 40px;
   }

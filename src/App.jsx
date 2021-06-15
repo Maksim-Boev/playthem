@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Main from './pages/Main';
-import Pricing from './pages/Pricing';
+import Main from './pages/Main/Main';
+import Pricing from './pages/Pricing/Pricing';
 import Navbar from './components/Header/Navbar';
 import Drawer from './components/Drawer';
 
@@ -12,6 +12,7 @@ const App = () => {
       <Navbar />
       <Drawer />
       <Switch>
+        <Route exact path="/" component={Main} />
         <Route exact path="/Our Games" component={Main} />
         <Route exact path="/Platform" component={Main} />
         <Route exact path="/Use Case" component={Main} />
