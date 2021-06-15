@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import {
   MenuList,
   Backdrop,
   MenuToggle,
-  MenuListItemStyle
+  MenuListItemStyle,
+  Link
 } from './StyledComponents';
 
 const Drawer = () => {
@@ -16,23 +16,22 @@ const Drawer = () => {
     'Blog',
     'Log In'
   ];
-  const [menuNumber, setMenuNumber] = useState(false);
+
   const [toggle, setToggle] = useState(false);
 
   const link = menuList.map((item) => {
     return (
-      <NavLink key={item} to={`/${item}`}>
-        <MenuListItemStyle
-          key={item.toString()}
-          ticketMarker={menuNumber === item}
+      <MenuListItemStyle key={item.toString()}>
+        <Link
           onClick={() => {
             setToggle(!toggle);
-            setMenuNumber(item);
           }}
+          activeClassName="navbar-active"
+          to={`/${item}`}
         >
           {item}
-        </MenuListItemStyle>
-      </NavLink>
+        </Link>
+      </MenuListItemStyle>
     );
   });
 

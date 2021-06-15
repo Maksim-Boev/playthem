@@ -25,17 +25,6 @@ export const NavList = styled.ul`
   width: 550px;
 `;
 
-export const NavListItem = styled.li`
-  list-style: none;
-  white-space: nowrap;
-  color: #474747;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
 export const Link = styled(NavLink)`
   text-decoration: none;
   list-style: none;
