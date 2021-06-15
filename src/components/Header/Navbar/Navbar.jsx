@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavList, NavListItem, Wrapper, Link } from './StyledComponent';
+import { NavList, Wrapper, Link } from './StyledComponent';
 import StartBtn from '../../Buttons/StartBtn';
 import logo from '../../../shared/assets/img/logo.png';
 import { Logo } from '../StyledComponets';
@@ -21,8 +21,8 @@ const Navbar = () => {
 
       <NavList>
         {navBtn.map((item) => (
-          <Link key={item} to={`/${item}`}>
-            <NavListItem>{item}</NavListItem>
+          <Link activeClassName="navbar-active" key={item} to={`/${item}`}>
+            {item}
           </Link>
         ))}
         <StartBtn />
