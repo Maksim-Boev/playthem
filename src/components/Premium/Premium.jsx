@@ -10,29 +10,23 @@ import {
 import CheckMarkIcon from '../CheckMarkIcon';
 import premiumTitles from '../../shared/constants/premiumTitles';
 
-const Premium = ({ plus, price }) => {
-  const them = plus ? 'true' : 'false';
+const Premium = ({ price }) => {
   return (
-    <Wrapper color={them}>
+    <Wrapper>
       <div>
-        <Title color={them}>Premium</Title>
+        <Title>Premium</Title>
 
-        <Price color={them}>
+        <Price>
           ${price}
-          <Month color={them}>/mon</Month>
+          <Month>/mon</Month>
         </Price>
 
         {premiumTitles.map((textTitle, index) => (
-          <CheckMarkIcon
-            key={index.toString()}
-            colorIcon={plus ? '#fff' : '#6A4FE4'}
-            text={textTitle}
-            colorText={plus}
-          />
+          <CheckMarkIcon key={index.toString()} text={textTitle} />
         ))}
       </div>
 
-      <SelectPlantBtn outlined={them}>Select plant</SelectPlantBtn>
+      <SelectPlantBtn>Select plant</SelectPlantBtn>
     </Wrapper>
   );
 };

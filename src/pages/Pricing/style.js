@@ -18,7 +18,7 @@ export const WrappText = styled.div`
 
 export const WrappPremiumCards = styled.div`
   display: flex;
+  min-width: 750px;
   margin-top: 5%;
-  width: 70%;
   justify-content: space-between;
 `;
