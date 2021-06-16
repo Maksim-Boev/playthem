@@ -4,7 +4,9 @@ import Title from '../../components/Title';
 import Description from '../../components/Description';
 import background from '../../shared/assets/img/pricing/background.svg';
 
-import { WrappText, Wrapper, WrappPremiumCards } from './style';
+import { WrappText, Wrapper, WrappPremiumCards, Img } from './style';
+import GetStarted from '../../components/GetStarted';
+import Footer from '../../components/Footer';
 
 const Pricing = () => {
   return (
@@ -24,7 +26,9 @@ const Pricing = () => {
         <Premium price={39} />
         <Premium price={79} />
       </WrappPremiumCards>
-      <img src={background} alt="background" />
+      <Img src={background} alt="background" />
+      <GetStarted />
+      <Footer />
     </Wrapper>
   );
 };

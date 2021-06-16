@@ -34,7 +34,7 @@ export const SelectPlantBtn = styled.button`
   white-space: nowrap;
   font-size: 15px;
   padding: 0 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   height: 40px;
   color: #ffffff;
   text-align: center;
@@ -52,6 +52,7 @@ export const Wrapper = styled.div`
   max-width: 550px;
   padding: 5%;
   cursor: default;
+  transition-duration: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;

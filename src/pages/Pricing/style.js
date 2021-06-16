@@ -22,3 +22,10 @@ export const WrappPremiumCards = styled.div`
   margin-top: 5%;
   justify-content: space-between;
 `;
+
+export const Img = styled.img`
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+  top: 50px;
+`;
