@@ -1,9 +1,11 @@
-// import styled from 'styled-components';
-//
-// const Wrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-bottom: 20px;
-// `;
-// export default Wrapper;
+import styled from 'styled-components';
+
+export const AppWrapper = styled.div`
+  &&& {
+    .navbar-active {
+      color: #a4a4f7 !important;
+    }
+  }
+`;
+
+export const Wrapper = styled.div``;

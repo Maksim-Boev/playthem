@@ -5,10 +5,11 @@ import Main from './pages/Main/Main';
 import Pricing from './pages/Pricing/Pricing';
 import Navbar from './components/Header/Navbar';
 import Drawer from './components/Drawer';
+import { AppWrapper } from './StyledComponents';
 
 const App = () => {
   return (
-    <>
+    <AppWrapper>
       <Navbar />
       <Drawer />
       <Switch>
@@ -21,7 +22,7 @@ const App = () => {
         <Route exact path="/Log In" component={Main} />
         <Route render={() => <h2>Page not found</h2>} />
       </Switch>
-    </>
+    </AppWrapper>
   );
 };
 
