@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
   background: #6a4fe4;
   width: 100%;
   margin-top: 5%;
+  margin-bottom: ${({ mb }) => mb || '0px'};
 `;
 
 export const Title = styled.div`
@@ -27,6 +28,9 @@ export const Title = styled.div`
   color: #fff;
   font-weight: 500;
   font-size: 30px;
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
 `;
 
 export const Description = styled.div`
@@ -34,6 +38,9 @@ export const Description = styled.div`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   color: #fff;
+  @media (max-width: 425px) {
+    font-size: 6px;
+  }
 `;
 
 export const TrialBtn = styled.div`
@@ -53,6 +60,11 @@ export const TrialBtn = styled.div`
   z-index: 1;
   :hover {
     cursor: pointer;
+  }
+  @media (max-width: 426px) {
+    margin-left: 5%;
+    font-size: 10px;
+    height: 24px;
   }
 `;
 

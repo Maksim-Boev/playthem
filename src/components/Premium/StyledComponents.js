@@ -63,7 +63,7 @@ export const CardWrapper = styled.div`
   border: 1px solid #fff;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   :hover {
     background: #6a4fe4;
   }
@@ -89,5 +89,6 @@ export const CardWrapper = styled.div`
   @media (max-width: 825px) {
     width: 50%;
     margin: 10%;
+    min-width: 270px;
   }
 `;

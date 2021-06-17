@@ -6,7 +6,7 @@ import StartBtn from '../Buttons/StartBtn';
 const Footer = () => {
   return (
     <Wrapper>
-      <LinkFooter href="#">Playthem.com</LinkFooter>
+      <LinkFooter>Playthem.com</LinkFooter>
       <img src={logoFooter} alt="logo" />
       <StartBtn />
     </Wrapper>

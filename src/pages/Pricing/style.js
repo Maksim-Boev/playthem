@@ -15,6 +15,31 @@ export const WrappText = styled.div`
   height: 120px;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 470px) {
+    height: 100px;
+  }
+`;
+
+export const Title = styled.div`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: #474747;
+  font-weight: 500;
+  font-size: 30px;
+  @media (max-width: 470px) {
+    font-size: 18px;
+  }
+`;
+
+export const Description = styled.div`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #474747;
+  @media (max-width: 470px) {
+    font-size: 13px;
+  }
 `;
 
 export const WrappPremiumCards = styled.div`
@@ -33,7 +58,11 @@ export const WrappPremiumCards = styled.div`
 
 export const Img = styled.img`
   position: absolute;
+  min-width: 920px;
   z-index: -1;
   width: 70%;
   top: 50px;
+  @media (max-width: 825px) {
+    display: none;
+  }
 `;

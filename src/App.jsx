@@ -6,6 +6,7 @@ import Pricing from './pages/Pricing/Pricing';
 import Navbar from './components/Header/Navbar';
 import Drawer from './components/Drawer';
 import { AppWrapper } from './StyledComponents';
+import Platform from './pages/Platform';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route exact path="/Our Games" component={Main} />
-        <Route exact path="/Platform" component={Main} />
+        <Route exact path="/Platform" component={Platform} />
         <Route exact path="/Use Case" component={Main} />
         <Route exact path="/Pricing" component={Pricing} />
         <Route exact path="/Blog" component={Main} />
