@@ -15,7 +15,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   height: 25vw;
-  padding-left: 30%;
   max-height: 300px;
   background: #6a4fe4;
   width: 100%;
@@ -52,9 +51,13 @@ export const TrialBtn = styled.div`
   color: #fff;
   background-color: #6a4fe4;
   z-index: 1;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const WrappTitle = styled.div`
   width: 32%;
+  margin-left: 20%;
   z-index: 1;
 `;

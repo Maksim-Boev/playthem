@@ -38,7 +38,7 @@ export const MenuToggle = styled.i`
   :hover {
     opacity: 0.7;
   }
-  @media (min-width: 825px) {
+  @media (min-width: 826px) {
     display: none;
   }
 `;

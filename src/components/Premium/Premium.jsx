@@ -2,19 +2,20 @@ import React from 'react';
 import {
   Month,
   Price,
-  Wrapper,
+  CardWrapper,
   Title,
-  SelectPlantBtn
+  SelectPlantBtn,
+  Wrapper
 } from './StyledComponents';
 
 import CheckMarkIcon from '../CheckMarkIcon';
 import premiumTitles from '../../shared/constants/premiumTitles';
 
-const Premium = ({ price }) => {
+const Premium = ({ price, text }) => {
   return (
-    <Wrapper>
-      <div>
-        <Title>Premium</Title>
+    <CardWrapper>
+      <Wrapper>
+        <Title>{text}</Title>
 
         <Price>
           ${price}
@@ -24,10 +25,10 @@ const Premium = ({ price }) => {
         {premiumTitles.map((textTitle, index) => (
           <CheckMarkIcon key={index.toString()} text={textTitle} />
         ))}
-      </div>
+      </Wrapper>
 
       <SelectPlantBtn>Select plant</SelectPlantBtn>
-    </Wrapper>
+    </CardWrapper>
   );
 };
 

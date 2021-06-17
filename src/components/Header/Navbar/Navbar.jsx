@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavList, Wrapper, Link } from './StyledComponent';
 import StartBtn from '../../Buttons/StartBtn';
-import logo from '../../../shared/assets/img/logo.png';
+import logo from '../../../shared/assets/img/logo.svg';
 import { Logo } from '../StyledComponets';
 
 const Navbar = () => {

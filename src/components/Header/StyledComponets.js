@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const Logo = styled.img`
   margin: 30px 0;
-  @media (max-width: 768px) {
+  @media (max-width: 825px) {
     max-width: 150px;
     margin: 15px 0;
   }

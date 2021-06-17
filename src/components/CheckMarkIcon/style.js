@@ -5,6 +5,7 @@ export const Svg = styled.svg``;
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  padding: 2% 0;
 `;
 
 export const Text = styled.div`

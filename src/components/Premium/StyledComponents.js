@@ -49,7 +49,11 @@ export const SelectPlantBtn = styled.button`
 `;
 
 export const Wrapper = styled.div`
-  max-width: 550px;
+  width: 100%;
+`;
+
+export const CardWrapper = styled.div`
+  width: 35%;
   padding: 5%;
   cursor: default;
   transition-duration: 0.5s;
@@ -81,5 +85,9 @@ export const Wrapper = styled.div`
   }
   :hover ${Svg} {
     fill: #fff;
+  }
+  @media (max-width: 825px) {
+    width: 50%;
+    margin: 10%;
   }
 `;

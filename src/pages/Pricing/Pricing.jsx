@@ -23,8 +23,8 @@ const Pricing = () => {
       </WrappText>
 
       <WrappPremiumCards>
-        <Premium price={39} />
-        <Premium price={79} />
+        <Premium price={39} text="Premium" />
+        <Premium price={79} text="Premium plus" />
       </WrappPremiumCards>
       <Img src={background} alt="background" />
       <GetStarted />
