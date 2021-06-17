@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const MenuList = styled.ul`
   padding: 0;
@@ -37,7 +38,7 @@ export const MenuToggle = styled.i`
   :hover {
     opacity: 0.7;
   }
-  @media (min-width: 825px) {
+  @media (min-width: 826px) {
     display: none;
   }
 `;
@@ -49,7 +50,15 @@ export const MenuListItemStyle = styled.li`
   margin-top: 10px;
   margin-left: 20px;
   cursor: pointer;
-  ${({ ticketMarker }) => {
-    return ticketMarker ? 'color: #34afe7' : 'color: black';
-  }}
+`;
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  list-style: none;
+  color: #474747;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
 `;

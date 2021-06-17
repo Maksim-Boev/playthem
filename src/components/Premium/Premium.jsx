@@ -1,11 +1,34 @@
 import React from 'react';
-import Wrapper from './StyledComponents';
+import {
+  Month,
+  Price,
+  CardWrapper,
+  Title,
+  SelectPlantBtn,
+  Wrapper
+} from './StyledComponents';
 
-const Premium = () => {
+import CheckMarkIcon from '../CheckMarkIcon';
+import premiumTitles from '../../shared/constants/premiumTitles';
+
+const Premium = ({ price, text }) => {
   return (
-    <Wrapper>
-      <div> </div>
-    </Wrapper>
+    <CardWrapper>
+      <Wrapper>
+        <Title>{text}</Title>
+
+        <Price>
+          ${price}
+          <Month>/mon</Month>
+        </Price>
+
+        {premiumTitles.map((textTitle, index) => (
+          <CheckMarkIcon key={index.toString()} text={textTitle} />
+        ))}
+      </Wrapper>
+
+      <SelectPlantBtn>Select plant</SelectPlantBtn>
+    </CardWrapper>
   );
 };
 

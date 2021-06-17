@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../../ shared/assets/img/background.png';
+import background from '../../shared/assets/img/background.svg';
 
 import { Wrapper, ImgBack } from './StyledComponets';
 import StartText from './StartText';

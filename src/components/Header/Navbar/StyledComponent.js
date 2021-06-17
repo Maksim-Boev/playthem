@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -24,7 +25,8 @@ export const NavList = styled.ul`
   width: 550px;
 `;
 
-export const NavListItem = styled.li`
+export const Link = styled(NavLink)`
+  text-decoration: none;
   list-style: none;
   white-space: nowrap;
   color: #474747;
