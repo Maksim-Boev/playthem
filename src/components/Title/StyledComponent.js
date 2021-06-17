@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   font-weight: ${({ weight }) => weight || 300};
   font-size: ${({ size }) => size};
   @media (max-width: 470px) {
-    font-size: 40px;
+    font-size: ${({ mediaSize }) => mediaSize};
   }
 `;
 

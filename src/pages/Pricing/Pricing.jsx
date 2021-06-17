@@ -1,10 +1,15 @@
 import React from 'react';
 import Premium from '../../components/Premium';
-import Title from '../../components/Title';
-import Description from '../../components/Description';
 import background from '../../shared/assets/img/pricing/background.svg';
 
-import { WrappText, Wrapper, WrappPremiumCards, Img } from './style';
+import {
+  WrappText,
+  Wrapper,
+  WrappPremiumCards,
+  Img,
+  Title,
+  Description
+} from './style';
 import GetStarted from '../../components/GetStarted';
 import Footer from '../../components/Footer';
 

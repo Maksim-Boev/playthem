@@ -3,7 +3,7 @@ import Wrapper from './StyledComponent';
 
 const Title = ({ fontWeight, children, upperCase, fontSize }) => {
   return (
-    <Wrapper weight={fontWeight} size={fontSize}>
+    <Wrapper weight={fontWeight} size={fontSize} mediaSize="40px">
       {upperCase ? children.toUpperCase() : children}
     </Wrapper>
   );

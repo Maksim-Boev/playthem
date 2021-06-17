@@ -11,9 +11,9 @@ import {
   WrappTitle
 } from './style';
 
-const GetStarted = () => {
+const GetStarted = ({ marginBottom }) => {
   return (
-    <Wrapper>
+    <Wrapper mb={marginBottom}>
       <LeftBgTrial src={left} alt="left" />
       <RightBgTrial src={right} alt="right" />
       <WrappTitle>
