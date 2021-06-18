@@ -112,14 +112,13 @@ export const WrappBloc3 = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 25vw;
   padding-top: 5%;
   @media (max-width: 1024px) {
     height: 35vw;
   }
   @media (max-width: 425px) {
     flex-direction: column;
-    height: 60vh;
+    height: 140vw;
   }
 `;
 
@@ -182,5 +181,8 @@ export const ImgBloc4 = styled.img`
 `;
 
 export const WrappTitle = styled.div`
-  margin-top: 35%;
+  margin-top: 5%;
+  @media (max-width: 425px) {
+    margin-top: 35%;
+  }
 `;

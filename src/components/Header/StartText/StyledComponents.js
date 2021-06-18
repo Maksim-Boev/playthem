@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   margin: 270px 0 30px;
   max-width: 460px;
   z-index: 1;
+  @media (max-width: 768px) {
+    margin: 310px 0 30px;
+  }
   @media (max-width: 320px) {
     margin: 150px 0 30px;
   } ;

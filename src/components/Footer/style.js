@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  position: absolute;
   display: flex;
   width: 100%;
   height: 10vw;

@@ -24,7 +24,6 @@ import img from '../../shared/assets/img/platform/img.svg';
 import maskGroup from '../../shared/assets/img/platform/maskGroup1.svg';
 import StartBtn from '../../components/Buttons/StartBtn';
 import GetStarted from '../../components/GetStarted';
-import Footer from '../../components/Footer';
 
 const Platform = () => {
   return (
@@ -51,7 +50,6 @@ const Platform = () => {
           </Description>
         </WrappTextBloc1>
       </WrappBloc1>
-
       <WrappBloc1>
         <Img src={img} alt="any" />
         <WrappTextBloc1>
@@ -63,6 +61,7 @@ const Platform = () => {
           </Description>
         </WrappTextBloc1>
       </WrappBloc1>
+
       <WrappBloc2>
         <MaskGroup src={maskGroup} alt="maskGroup" />
         <Title size="30px">Some text</Title>
@@ -166,7 +165,6 @@ const Platform = () => {
           </Description>
         </Bloc4>
       </WrappBloc4>
-      <Footer />
     </Wrapper>
   );
 };

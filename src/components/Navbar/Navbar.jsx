@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavList, Wrapper, Link } from './StyledComponent';
-import StartBtn from '../../Buttons/StartBtn';
-import logo from '../../../shared/assets/img/logo.svg';
-import { Logo } from '../StyledComponets';
+import StartBtn from '../Buttons/StartBtn';
+import logo from '../../shared/assets/img/logo.svg';
+import { Logo } from '../Header/StyledComponets';
 
 const Navbar = () => {
   const navBtn = [

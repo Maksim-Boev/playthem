@@ -14,6 +14,7 @@ export const RightBgTrial = styled.img`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 25vw;
   max-height: 300px;
   background: #6a4fe4;
@@ -70,6 +71,5 @@ export const TrialBtn = styled.div`
 
 export const WrappTitle = styled.div`
   width: 32%;
-  margin-left: 20%;
   z-index: 1;
 `;
