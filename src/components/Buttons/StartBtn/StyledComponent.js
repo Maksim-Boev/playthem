@@ -4,6 +4,7 @@ const StyledStartBtn = styled.div`
   font-family: 'Montserrat', sans-serif;
   width: ${({ w }) => w || 'auto'};
   white-space: nowrap;
+  transition-duration: 0.5s;
   backdrop-filter: brightness(2.5);
   text-align: center;
   font-size: 15px;

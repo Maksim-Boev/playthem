@@ -16,6 +16,7 @@ export const Btn = styled.div`
       : '';
   }};
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.3s;
   font-size: 15px;
   padding: 10px;
   border: none;

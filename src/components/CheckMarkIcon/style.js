@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Svg = styled.svg``;
+export const Svg = styled.svg`
+  transition-duration: 0.5s;
+`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,6 +12,7 @@ export const Wrapper = styled.div`
 
 export const Text = styled.div`
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.5s;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

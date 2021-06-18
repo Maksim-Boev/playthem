@@ -5,6 +5,7 @@ const Btn = styled.div`
   color: #34afe7;
   white-space: nowrap;
   backdrop-filter: brightness(2.5);
+  transition-duration: 0.5s;
   border: 1px solid;
   border-color: #34afe7;
   border-radius: 2px;

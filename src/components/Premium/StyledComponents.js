@@ -3,6 +3,7 @@ import { Text, Svg } from '../CheckMarkIcon/style';
 
 export const Price = styled.div`
   display: flex;
+  transition-duration: 0.5s;
   align-items: baseline;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -13,6 +14,7 @@ export const Price = styled.div`
 
 export const Month = styled.div`
   display: flex;
+  transition-duration: 0.5s;
   align-items: baseline;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -23,6 +25,7 @@ export const Month = styled.div`
 
 export const Title = styled.div`
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.5s;
   font-style: normal;
   color: #474747;
   font-weight: 100;
