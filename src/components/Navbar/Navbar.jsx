@@ -25,7 +25,7 @@ const Navbar = () => {
             {item}
           </Link>
         ))}
-        <StartBtn />
+        <StartBtn background />
       </NavList>
     </Wrapper>
   );

@@ -12,6 +12,11 @@ const StyledStartBtn = styled.div`
   border-radius: 2px;
   border: 1px solid #34afe7;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+  ${({ background }) => {
+    return background
+      ? 'background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%); color: #fff;'
+      : '';
+  }}
   :hover {
     cursor: pointer;
     background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%);
