@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding: 0 14%;
   z-index: 1;
+  @media (max-width: 1024px) {
+    padding: 0 10%;
+    width: auto;
+  }
   @media (max-width: 768px) {
     padding: 0 7%;
   }

@@ -16,7 +16,7 @@ const Header = () => {
       <WrapperStartBlock>
         <StartText />
         <StartBtnWrapper>
-          <StartBtn width="60%" />
+          <StartBtn width="50%" />
           <WatchBtn />
         </StartBtnWrapper>
       </WrapperStartBlock>

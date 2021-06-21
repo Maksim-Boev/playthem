@@ -28,7 +28,7 @@ export const Title = styled.div`
   font-weight: 500;
   font-size: ${({ size }) => size};
   @media (max-width: 470px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
@@ -40,7 +40,7 @@ export const Description = styled.div`
   font-size: 16px;
   color: #474747;
   @media (max-width: 470px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 

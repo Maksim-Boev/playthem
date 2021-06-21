@@ -17,6 +17,9 @@ export const WrapperStartBlock = styled.div`
   justify-content: start;
   flex-direction: column;
   padding-left: 15%;
+  @media (max-width: 1024px) {
+    padding-left: 10%;
+  }
   @media (max-width: 768px) {
     padding: 0 7%;
     align-items: center;

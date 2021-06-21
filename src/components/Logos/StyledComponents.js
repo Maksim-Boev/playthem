@@ -31,6 +31,7 @@ export const Title = styled.div`
   font-size: 30px;
   @media (max-width: 768px) {
     margin-top: 60px;
+    font-size: 17px;
   }
 `;
 

@@ -5,6 +5,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   padding-bottom: 13%;
   background: #f8f8f8;
+  @media (min-width: 1024px) {
+    padding-bottom: 250px;
+  }
 `;
 
 const Logo = styled.img`

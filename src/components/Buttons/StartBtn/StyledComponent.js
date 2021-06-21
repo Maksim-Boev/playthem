@@ -9,19 +9,17 @@ const StyledStartBtn = styled.div`
   text-align: center;
   font-size: 15px;
   padding: 10px;
-  color: #34afe7;
   border-radius: 2px;
-  border: 1px solid #34afe7;
+  color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
-  ${({ background }) => {
-    return background
-      ? 'background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%); color: #fff;'
-      : '';
-  }}
+  background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%);
+
   :hover {
     cursor: pointer;
-    background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%);
-    color: #fff;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 13px;
   }
 `;
 

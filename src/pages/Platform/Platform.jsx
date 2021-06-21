@@ -67,8 +67,7 @@ const Platform = () => {
         <Title size="30px">Some text</Title>
         <Description2>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident
+          dolore eu fugiat nulla pariatur.
         </Description2>
         <StartBtn />
       </WrappBloc2>
