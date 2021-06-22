@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding: 0 14%;
   z-index: 1;
+  @media (max-width: 1024px) {
+    padding: 0 0 0 10%;
+    width: auto;
+  }
   @media (max-width: 768px) {
     padding: 0 7%;
   }
@@ -22,7 +26,7 @@ export const NavList = styled.ul`
   height: 40px;
   justify-content: space-between;
   align-items: center;
-  width: 550px;
+  width: 600px;
 `;
 
 export const Link = styled(NavLink)`

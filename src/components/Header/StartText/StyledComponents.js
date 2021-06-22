@@ -7,9 +7,9 @@ export const Wrapper = styled.div`
   margin: 270px 0 30px;
   max-width: 460px;
   z-index: 1;
-  @media (max-width: 320px) {
-    margin: 150px 0 30px;
-  } ;
+  @media (max-width: 768px) {
+    margin: 310px 0 30px;
+  }
 `;
 
 export const WrapperStartBlock = styled.div`
@@ -17,6 +17,9 @@ export const WrapperStartBlock = styled.div`
   justify-content: start;
   flex-direction: column;
   padding-left: 15%;
+  @media (max-width: 1024px) {
+    padding-left: 10%;
+  }
   @media (max-width: 768px) {
     padding: 0 7%;
     align-items: center;

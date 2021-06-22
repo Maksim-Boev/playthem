@@ -11,7 +11,6 @@ import {
   Description
 } from './style';
 import GetStarted from '../../components/GetStarted';
-import Footer from '../../components/Footer';
 
 const Pricing = () => {
   return (
@@ -33,7 +32,6 @@ const Pricing = () => {
       </WrappPremiumCards>
       <Img src={background} alt="background" />
       <GetStarted />
-      <Footer />
     </Wrapper>
   );
 };

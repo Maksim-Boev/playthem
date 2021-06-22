@@ -28,7 +28,7 @@ export const Title = styled.div`
   font-weight: 500;
   font-size: ${({ size }) => size};
   @media (max-width: 470px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
@@ -40,7 +40,8 @@ export const Description = styled.div`
   font-size: 16px;
   color: #474747;
   @media (max-width: 470px) {
-    font-size: 13px;
+    font-size: 14px;
+    margin: 3% 0;
   }
 `;
 
@@ -52,7 +53,7 @@ export const Description2 = styled.div`
   font-size: 16px;
   color: #474747;
   @media (max-width: 470px) {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
   }
 `;
@@ -112,14 +113,13 @@ export const WrappBloc3 = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 25vw;
   padding-top: 5%;
   @media (max-width: 1024px) {
     height: 35vw;
   }
   @media (max-width: 425px) {
     flex-direction: column;
-    height: 60vh;
+    height: 140vw;
   }
 `;
 
@@ -182,5 +182,8 @@ export const ImgBloc4 = styled.img`
 `;
 
 export const WrappTitle = styled.div`
-  margin-top: 35%;
+  margin-top: 5%;
+  @media (max-width: 425px) {
+    margin-top: 35%;
+  }
 `;

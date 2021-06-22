@@ -23,9 +23,10 @@ export const WrappText = styled.div`
 export const Title = styled.div`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  white-space: nowrap;
   color: #474747;
   font-weight: 500;
-  font-size: 30px;
+  font-size: ${({ size }) => size};
   @media (max-width: 470px) {
     font-size: 17px;
   }
@@ -35,35 +36,42 @@ export const Description = styled.div`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin: 5% 0;
   font-size: 16px;
   color: #474747;
   @media (max-width: 470px) {
     font-size: 14px;
-    margin-top: 2%;
   }
 `;
 
-export const WrappPremiumCards = styled.div`
+export const Bloc = styled.div`
   display: flex;
-  width: 60%;
-  min-width: 750px;
+  width: 70%;
+  align-items: center;
   margin-top: 5%;
-  justify-content: space-evenly;
-  @media (max-width: 825px) {
+  flex-flow: ${({ revers }) => {
+    return revers ? 'row-reverse' : 'row';
+  }};
+  @media (max-width: 425px) {
     flex-direction: column;
-    align-items: center;
-    margin-top: 15%;
-    min-width: 100%;
   }
 `;
 
 export const Img = styled.img`
-  position: absolute;
-  min-width: 920px;
-  z-index: -1;
-  width: 70%;
-  top: 50px;
-  @media (max-width: 825px) {
-    display: none;
+  width: 50%;
+  ${({ revers }) => {
+    return revers ? 'margin-left: 5%' : 'margin-right: 5%';
+  }};
+  @media (max-width: 425px) {
+    width: 90%;
+    margin: 0;
+  }
+`;
+
+export const WrappTextBloc = styled.div`
+  width: 50%;
+  @media (max-width: 425px) {
+    width: 90%;
+    margin-top: 5%;
   }
 `;

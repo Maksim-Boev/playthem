@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Text = styled.div`
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0 10px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -16,6 +16,7 @@ export const Btn = styled.div`
       : '';
   }};
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.3s;
   font-size: 15px;
   padding: 10px;
   border: none;
@@ -23,6 +24,8 @@ export const Btn = styled.div`
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
   :hover {
     cursor: pointer;
+    background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%);
+    color: #ffffff;
   }
 `;
 
@@ -30,7 +33,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 `;
 
 export const Description = styled.div`
@@ -42,7 +45,8 @@ export const Description = styled.div`
   font-weight: normal;
   font-size: 16px;
   @media (max-width: 768px) {
-    padding: 7%;
+    padding: 3%;
+    font-size: 14px;
   }
 `;
 
@@ -54,6 +58,7 @@ export const Title = styled.div`
   font-size: 30px;
   @media (max-width: 768px) {
     margin-top: 60px;
+    font-size: 17px;
   }
 `;
 
