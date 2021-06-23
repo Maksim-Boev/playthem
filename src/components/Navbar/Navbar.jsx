@@ -14,7 +14,11 @@ const Navbar = () => {
 
       <NavList>
         {navLinks.map((item) => (
-          <Link activeClassName="navbar-active" key={item} to={`/${item.link}`}>
+          <Link
+            activeClassName="navbar-active"
+            key={item.link}
+            to={`/${item.link}`}
+          >
             {item.title}
           </Link>
         ))}
