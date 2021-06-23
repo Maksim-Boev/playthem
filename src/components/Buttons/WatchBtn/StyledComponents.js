@@ -11,6 +11,7 @@ const Btn = styled.div`
   padding: 10px;
   margin-left: 25px;
   width: 50%;
+  font-size: 15px;
   text-align: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
   :hover {

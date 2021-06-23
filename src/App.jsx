@@ -17,12 +17,12 @@ const App = () => {
       <Drawer />
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/Our Games" component={Main} />
-        <Route exact path="/Platform" component={Platform} />
-        <Route exact path="/Use Case" component={UseCase} />
-        <Route exact path="/Pricing" component={Pricing} />
-        <Route exact path="/Blog" component={Main} />
-        <Route exact path="/Log In" component={Main} />
+        <Route exact path="/our-games" component={Main} />
+        <Route exact path="/platform" component={Platform} />
+        <Route exact path="/use-case" component={UseCase} />
+        <Route exact path="/pricing" component={Pricing} />
+        <Route exact path="/blog" component={Main} />
+        <Route exact path="/log-in" component={Main} />
         <Route render={() => <h2>Page not found</h2>} />
       </Switch>
       <Footer />
