@@ -1,21 +1,21 @@
 import React from 'react';
 import {
   Wrapper,
-  WrappText,
+  StartText,
   Title,
   Description,
-  WrappBloc1,
+  WrappBlock1,
   Img,
-  WrappBloc2,
-  WrappTextBloc1,
+  WrappBlock2,
+  WrappTextBlock1,
   MaskGroup,
-  WrappBloc3,
+  WrappBlock3,
   Koma,
-  Bloc3,
+  Block3,
   Round,
-  WrappBloc4,
-  Bloc4,
-  ImgBloc4,
+  WrappBlock4,
+  Block4,
+  ImgBlock4,
   Description2,
   WrappTitle
 } from './style';
@@ -28,7 +28,7 @@ import GetStarted from '../../components/GetStarted';
 const Platform = () => {
   return (
     <Wrapper>
-      <WrappText>
+      <StartText>
         <Title size="30px" fontWeight={500}>
           PLATHEM Games
         </Title>
@@ -37,32 +37,32 @@ const Platform = () => {
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident
         </Description>
-      </WrappText>
+      </StartText>
 
-      <WrappBloc1 revers>
+      <WrappBlock1 revers>
         <Img revers src={img} alt="any" />
-        <WrappTextBloc1>
+        <WrappTextBlock1>
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </WrappTextBloc1>
-      </WrappBloc1>
-      <WrappBloc1>
+        </WrappTextBlock1>
+      </WrappBlock1>
+      <WrappBlock1>
         <Img src={img} alt="any" />
-        <WrappTextBloc1>
+        <WrappTextBlock1>
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </WrappTextBloc1>
-      </WrappBloc1>
+        </WrappTextBlock1>
+      </WrappBlock1>
 
-      <WrappBloc2>
+      <WrappBlock2>
         <MaskGroup src={maskGroup} alt="maskGroup" />
         <Title size="30px">Some text</Title>
         <Description2>
@@ -70,39 +70,39 @@ const Platform = () => {
           dolore eu fugiat nulla pariatur.
         </Description2>
         <StartBtn />
-      </WrappBloc2>
-      <WrappBloc3>
-        <Bloc3>
-          <Koma>’’</Koma>
+      </WrappBlock2>
+      <WrappBlock3>
+        <Block3>
+          <Koma>“</Koma>
           <Title size="36px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-        <Bloc3>
-          <Koma>’’</Koma>
+        </Block3>
+        <Block3>
+          <Koma>“</Koma>
           <Title size="36px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-        <Bloc3>
-          <Koma>’’</Koma>
+        </Block3>
+        <Block3>
+          <Koma>“</Koma>
           <Title size="36px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-      </WrappBloc3>
+        </Block3>
+      </WrappBlock3>
       <GetStarted marginBottom="70px" />
-      <WrappBloc3>
-        <Bloc3>
+      <WrappBlock3>
+        <Block3>
           <Round />
           <Title size="36px">Some text</Title>
           <Description>
@@ -110,8 +110,8 @@ const Platform = () => {
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-        <Bloc3>
+        </Block3>
+        <Block3>
           <Round />
           <Title size="36px">Some text</Title>
           <Description>
@@ -119,8 +119,8 @@ const Platform = () => {
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-        <Bloc3>
+        </Block3>
+        <Block3>
           <Round />
           <Title size="36px">Some text</Title>
           <Description>
@@ -128,42 +128,42 @@ const Platform = () => {
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc3>
-      </WrappBloc3>
+        </Block3>
+      </WrappBlock3>
 
       <WrappTitle>
         <Title size="36px">Insights from our blog</Title>
       </WrappTitle>
 
-      <WrappBloc4>
-        <Bloc4>
-          <ImgBloc4 src={img} alt="any" />
+      <WrappBlock4>
+        <Block4>
+          <ImgBlock4 src={img} alt="any" />
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc4>
-        <Bloc4>
-          <ImgBloc4 src={img} alt="any" />
+        </Block4>
+        <Block4>
+          <ImgBlock4 src={img} alt="any" />
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc4>
-        <Bloc4>
-          <ImgBloc4 src={img} alt="any" />
+        </Block4>
+        <Block4>
+          <ImgBlock4 src={img} alt="any" />
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </Bloc4>
-      </WrappBloc4>
+        </Block4>
+      </WrappBlock4>
     </Wrapper>
   );
 };

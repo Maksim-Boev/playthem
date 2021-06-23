@@ -4,9 +4,9 @@ import {
   Description,
   Img,
   Title,
-  Bloc,
+  Block,
   WrappText,
-  WrappTextBloc
+  WrappTextBlock
 } from './style';
 import GetStarted from '../../components/GetStarted';
 
@@ -25,28 +25,28 @@ const UseCase = () => {
           proident
         </Description>
       </WrappText>
-      <Bloc revers>
+      <Block revers>
         <Img revers src={img} alt="any" />
-        <WrappTextBloc>
+        <WrappTextBlock>
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </WrappTextBloc>
-      </Bloc>
-      <Bloc>
+        </WrappTextBlock>
+      </Block>
+      <Block>
         <Img src={img} alt="any" />
-        <WrappTextBloc>
+        <WrappTextBlock>
           <Title size="30px">Some text</Title>
           <Description>
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident
           </Description>
-        </WrappTextBloc>
-      </Bloc>
+        </WrappTextBlock>
+      </Block>
       <GetStarted />
     </Wrapper>
   );

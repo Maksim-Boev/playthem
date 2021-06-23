@@ -44,7 +44,7 @@ export const Description = styled.div`
   }
 `;
 
-export const Bloc = styled.div`
+export const Block = styled.div`
   display: flex;
   width: 70%;
   align-items: center;
@@ -68,7 +68,7 @@ export const Img = styled.img`
   }
 `;
 
-export const WrappTextBloc = styled.div`
+export const WrappTextBlock = styled.div`
   width: 50%;
   @media (max-width: 425px) {
     width: 90%;

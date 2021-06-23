@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   padding-top: 220px;
 `;
 
-export const WrappText = styled.div`
+export const StartText = styled.div`
   display: flex;
   max-width: 700px;
   padding: 0 5%;
@@ -58,7 +58,7 @@ export const Description2 = styled.div`
   }
 `;
 
-export const WrappBloc1 = styled.div`
+export const WrappBlock1 = styled.div`
   display: flex;
   width: 70%;
   align-items: center;
@@ -71,11 +71,11 @@ export const WrappBloc1 = styled.div`
   }
 `;
 
-export const WrappBloc2 = styled.div`
+export const WrappBlock2 = styled.div`
   display: flex;
   padding: 0 5%;
   margin-top: 5%;
-  height: 29.2vw;
+  height: 34.74vw;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -93,7 +93,7 @@ export const Img = styled.img`
   }
 `;
 
-export const WrappTextBloc1 = styled.div`
+export const WrappTextBlock1 = styled.div`
   width: 50%;
   @media (max-width: 425px) {
     width: 90%;
@@ -109,7 +109,7 @@ export const MaskGroup = styled.img`
   z-index: -1;
 `;
 
-export const WrappBloc3 = styled.div`
+export const WrappBlock3 = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -121,6 +121,9 @@ export const WrappBloc3 = styled.div`
     flex-direction: column;
     height: 140vw;
   }
+  @media (max-width: 320px) {
+    height: 180vw;
+  }
 `;
 
 export const Koma = styled.div`
@@ -131,7 +134,7 @@ export const Koma = styled.div`
   color: #33b0e7;
 `;
 
-export const Bloc3 = styled.div`
+export const Block3 = styled.div`
   width: 18%;
   @media (max-width: 1024px) {
     width: 30%;
@@ -155,7 +158,7 @@ export const Round = styled.div`
   );
 `;
 
-export const WrappBloc4 = styled.div`
+export const WrappBlock4 = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 5%;
@@ -165,7 +168,7 @@ export const WrappBloc4 = styled.div`
   }
 `;
 
-export const Bloc4 = styled.div`
+export const Block4 = styled.div`
   width: 18%;
   @media (max-width: 1024px) {
     width: 30%;
@@ -176,7 +179,7 @@ export const Bloc4 = styled.div`
   }
 `;
 
-export const ImgBloc4 = styled.img`
+export const ImgBlock4 = styled.img`
   width: 100%;
   margin-bottom: 5%;
 `;
