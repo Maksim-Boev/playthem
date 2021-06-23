@@ -3,16 +3,9 @@ import { NavList, Wrapper, Link } from './StyledComponent';
 import StartBtn from '../Buttons/StartBtn';
 import logo from '../../shared/assets/img/logo.svg';
 import { Logo } from '../Header/StyledComponets';
+import navLinks from '../../shared/constants/navLinks';
 
 const Navbar = () => {
-  const navBtn = [
-    'Our Games',
-    'Platform',
-    'Use Case',
-    'Pricing',
-    'Blog',
-    'Log In'
-  ];
   return (
     <Wrapper>
       <Link to="/">
@@ -20,9 +13,9 @@ const Navbar = () => {
       </Link>
 
       <NavList>
-        {navBtn.map((item) => (
-          <Link activeClassName="navbar-active" key={item} to={`/${item}`}>
-            {item}
+        {navLinks.map((item) => (
+          <Link activeClassName="navbar-active" key={item} to={`/${item.link}`}>
+            {item.title}
           </Link>
         ))}
         <StartBtn background />
