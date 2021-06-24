@@ -6,30 +6,22 @@ import {
   MenuListItemStyle,
   Link
 } from './StyledComponents';
+import navLinks from '../../shared/constants/navLinks';
 
 const Drawer = () => {
-  const menuList = [
-    'Our Games',
-    'Platform',
-    'Use Case',
-    'Pricing',
-    'Blog',
-    'Log In'
-  ];
-
   const [toggle, setToggle] = useState(false);
 
-  const link = menuList.map((item) => {
+  const link = navLinks.map((item) => {
     return (
-      <MenuListItemStyle key={item.toString()}>
+      <MenuListItemStyle key={item.title}>
         <Link
           onClick={() => {
             setToggle(!toggle);
           }}
           activeClassName="navbar-active"
-          to={`/${item}`}
+          to={`/${item.link}`}
         >
-          {item}
+          {item.title}
         </Link>
       </MenuListItemStyle>
     );

@@ -7,19 +7,19 @@ import Description from '../../Description';
 const StartText = () => {
   return (
     <Wrapper>
-      <Title fontSize="60px">Some start text</Title>
-
-      <Description>
+      <Title fontSize="60px">
         <Typed
-          strings={[
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n' +
-              'dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n' +
-              'proident'
-          ]}
-          typeSpeed={40}
+          strings={['Some start text']}
+          typeSpeed={150}
           backSpeed={50}
           loop
         />
+      </Title>
+
+      <Description>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        proident.
       </Description>
     </Wrapper>
   );

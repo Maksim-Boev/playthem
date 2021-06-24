@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   text-align: justify;
   margin: 270px 0 30px;
-  max-width: 460px;
+  max-width: 475px;
   z-index: 1;
   @media (max-width: 768px) {
     margin: 310px 0 30px;
