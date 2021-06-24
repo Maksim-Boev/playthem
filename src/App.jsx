@@ -9,6 +9,7 @@ import { AppWrapper } from './StyledComponents';
 import Platform from './pages/Platform';
 import UseCase from './pages/UseCase';
 import Footer from './components/Footer';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/blog" component={Main} />
         <Route exact path="/log-in" component={Main} />
-        <Route render={() => <h2>Page not found</h2>} />
+        <Route component={PageNotFound} />
       </Switch>
       <Footer />
     </AppWrapper>
