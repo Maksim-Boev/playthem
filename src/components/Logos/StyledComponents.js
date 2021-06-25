@@ -44,5 +44,7 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperIcon = styled.a`
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 `;

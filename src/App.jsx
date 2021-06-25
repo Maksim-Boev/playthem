@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
 import Main from './pages/Main/Main';
 import Pricing from './pages/Pricing/Pricing';
 import Navbar from './components/Navbar';
@@ -12,8 +13,30 @@ import Footer from './components/Footer';
 import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <AppWrapper>
+      <div>Current Language: {i18n.language}</div>
+      <button type="button" onClick={() => changeLanguage('ru')}>
+        ru
+      </button>
+      <button type="button" onClick={() => changeLanguage('en')}>
+        en
+      </button>
+      <button type="button" onClick={() => changeLanguage('fr')}>
+        fr
+      </button>
+      <button type="button" onClick={() => changeLanguage('de')}>
+        de
+      </button>
+      <button type="button" onClick={() => changeLanguage('he')}>
+        he
+      </button>
       <Navbar />
       <Drawer />
       <Switch>

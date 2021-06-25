@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import StyledWatchBtn from './StyledComponents';
 
 const WatchBtn = () => {
-  return <StyledWatchBtn>Watch Video</StyledWatchBtn>;
+  const { t } = useTranslation();
+  return <StyledWatchBtn>{t('btnWatch')}</StyledWatchBtn>;
 };
 
 export default WatchBtn;

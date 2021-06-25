@@ -27,7 +27,7 @@ export const WrapperStartBlock = styled.div`
   } ;
 `;
 export const StartBtnWrapper = styled.div`
-  max-width: 460px;
+  max-width: 475px;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;

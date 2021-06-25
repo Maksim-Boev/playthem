@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-const StyledStartBtn = styled.div`
+const StyledStartBtn = styled.a`
   font-family: 'Montserrat', sans-serif;
   width: ${({ w }) => w || 'auto'};
   white-space: nowrap;
   transition-duration: 0.5s;
   backdrop-filter: brightness(2.5);
   text-align: center;
+  text-decoration: none;
   font-size: 15px;
   padding: 10px;
   border-radius: 2px;

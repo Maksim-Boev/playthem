@@ -18,10 +18,6 @@ const navLinks = [
   {
     title: 'Blog',
     link: 'blog'
-  },
-  {
-    title: 'Log In',
-    link: 'log-in'
   }
 ];
 

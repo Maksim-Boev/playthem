@@ -40,3 +40,15 @@ export const Link = styled(NavLink)`
     cursor: pointer;
   }
 `;
+
+export const LogIn = styled.a`
+  text-decoration: none;
+  list-style: none;
+  white-space: nowrap;
+  color: #474747;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+`;

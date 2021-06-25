@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavList, Wrapper, Link } from './StyledComponent';
+
+import { NavList, Wrapper, Link, LogIn } from './StyledComponent';
 import StartBtn from '../Buttons/StartBtn';
 import logo from '../../shared/assets/img/logo.svg';
 import { Logo } from '../Header/StyledComponets';
@@ -22,6 +23,10 @@ const Navbar = () => {
             {item.title}
           </Link>
         ))}
+        <LogIn href="https://60d3c5895cb94045fecc2ace--determined-payne-766135.netlify.app/#/login">
+          LogIn
+        </LogIn>
+
         <StartBtn background />
       </NavList>
     </Wrapper>

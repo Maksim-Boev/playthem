@@ -1,11 +1,11 @@
-import amazon from '../assets/icons/amazon.png';
-import yahoo from '../assets/icons/castcom_yahoo.png';
-import ebay from '../assets/icons/ebay.png';
-import ebayProStores from '../assets/icons/ebay-proStores.png';
-import shopify from '../assets/icons/shopify.png';
-import vendi from '../assets/icons/vendi.png';
-import volusion from '../assets/icons/volusion.png';
-import zencart from '../assets/icons/zencart.png';
+import amazon from '../assets/icons/amazon.svg';
+import yahoo from '../assets/icons/yahoo.svg';
+import ebay from '../assets/icons/ebay.svg';
+import ebayProStores from '../assets/icons/ProStores-Logo-Ebay.svg';
+import shopify from '../assets/icons/shopify.svg';
+import vendi from '../assets/icons/vendi.svg';
+import volusion from '../assets/icons/volusion.svg';
+import zencart from '../assets/icons/zencart.svg';
 
 const links = [
   {
