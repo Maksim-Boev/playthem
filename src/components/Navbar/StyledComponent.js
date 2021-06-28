@@ -85,8 +85,9 @@ export const DropBtn = styled.button`
 `;
 
 export const LngBtn = styled.button`
+  width: 100%;
   color: black;
-  padding: 12px 16px;
+  padding: 12px 0;
   text-decoration: none;
   border: none;
   display: block;

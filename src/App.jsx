@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { useTranslation } from 'react-i18next';
 import Main from './pages/Main/Main';
 import Pricing from './pages/Pricing/Pricing';
 import Navbar from './components/Navbar';
@@ -13,12 +12,6 @@ import Footer from './components/Footer';
 import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
-  const { i18n } = useTranslation();
-
-  useEffect(() => {
-    localStorage.setItem('lng', `${i18n.language}`);
-  }, [i18n.language]);
-
   return (
     <AppWrapper>
       <Navbar />
