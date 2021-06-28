@@ -55,8 +55,8 @@ i18next.use(initReactI18next).init({
       }
     }
   },
-  lng: 'en',
-  fallbackLng: 'en',
+  lng: `${localStorage.getItem('lng') || 'en'}`,
+  fallbackLng: `${localStorage.getItem('lng') || 'en'}`,
 
   interpolation: {
     escapeValue: false

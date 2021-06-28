@@ -52,3 +52,42 @@ export const LogIn = styled.a`
     cursor: pointer;
   }
 `;
+
+export const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+`;
+
+export const Dropdown = styled.div`
+  display: inline-block;
+  position: relative;
+  float: left;
+  :hover ${DropdownContent} {
+    display: block;
+  }
+`;
+
+export const DropBtn = styled.button`
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #32b1e8 0%, #4898dd 100%);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+`;
+
+export const LngBtn = styled.button`
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: none;
+  display: block;
+`;

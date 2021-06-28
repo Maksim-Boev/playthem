@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
@@ -15,28 +15,12 @@ import PageNotFound from './pages/PageNotFound';
 const App = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    localStorage.setItem('lng', `${i18n.language}`);
+  }, [i18n.language]);
 
   return (
     <AppWrapper>
-      <div>Current Language: {i18n.language}</div>
-      <button type="button" onClick={() => changeLanguage('ru')}>
-        ru
-      </button>
-      <button type="button" onClick={() => changeLanguage('en')}>
-        en
-      </button>
-      <button type="button" onClick={() => changeLanguage('fr')}>
-        fr
-      </button>
-      <button type="button" onClick={() => changeLanguage('de')}>
-        de
-      </button>
-      <button type="button" onClick={() => changeLanguage('he')}>
-        he
-      </button>
       <Navbar />
       <Drawer />
       <Switch>

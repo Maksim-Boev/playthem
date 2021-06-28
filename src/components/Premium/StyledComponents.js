@@ -34,6 +34,7 @@ export const Title = styled.div`
 
 export const SelectPlantBtn = styled.button`
   font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.5s;
   white-space: nowrap;
   font-size: 15px;
   padding: 0 30px;
