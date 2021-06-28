@@ -41,7 +41,7 @@ const Navbar = () => {
             {item.title}
           </Link>
         ))}
-        <LogIn href="https://60d9cd184378c2000723a828--suspicious-tesla-f0122f.netlify.app/#/login">
+        <LogIn href="https://60d9d83432286881ded1800c--nostalgic-edison-c9b8d2.netlify.app/#/login">
           LogIn
         </LogIn>
 

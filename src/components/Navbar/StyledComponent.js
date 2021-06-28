@@ -30,6 +30,7 @@ export const NavList = styled.ul`
 `;
 
 export const Link = styled(NavLink)`
+  margin: 0 3px;
   text-decoration: none;
   list-style: none;
   white-space: nowrap;
@@ -64,6 +65,7 @@ export const DropdownContent = styled.div`
 `;
 
 export const Dropdown = styled.div`
+  margin-left: 2%;
   display: inline-block;
   position: relative;
   float: left;

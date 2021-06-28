@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   font-weight: normal;
   font-size: 16px;
   color: #474747;
+  text-align: ${({ language }) => (language === 'he' ? 'right' : 'left')};
   @media (min-width: 475px) {
     height: 57px;
   }

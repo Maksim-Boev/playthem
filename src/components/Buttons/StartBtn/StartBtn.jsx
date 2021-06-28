@@ -8,7 +8,7 @@ const StartBtn = ({ width, background }) => {
     <StyledStartBtn
       background={background}
       w={width}
-      href="https://60d9cd184378c2000723a828--suspicious-tesla-f0122f.netlify.app/#/login"
+      href="https://60d9d83432286881ded1800c--nostalgic-edison-c9b8d2.netlify.app/#/login"
     >
       {t('btnGetStarted')}
     </StyledStartBtn>
