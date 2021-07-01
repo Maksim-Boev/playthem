@@ -7,6 +7,7 @@ import {
   Link
 } from './StyledComponents';
 import navLinks from '../../shared/constants/navLinks';
+import Languages from '../Languages';
 
 const Drawer = () => {
   const [toggle, setToggle] = useState(false);
@@ -35,8 +36,10 @@ const Drawer = () => {
           onClick={() => setToggle(!toggle)}
           className={toggle ? 'fa fa-times' : 'fa fa-bars'}
         />
-
-        <MenuList open={toggle}>{link}</MenuList>
+        <MenuList open={toggle}>
+          {link}
+          <Languages />
+        </MenuList>
       </div>
       {toggle && <Backdrop onClick={() => setToggle(!toggle)} />}
     </>
