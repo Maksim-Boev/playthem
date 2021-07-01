@@ -13,6 +13,7 @@ import {
 import GetStarted from '../../components/GetStarted';
 
 const Pricing = () => {
+  const title = ['1 site'];
   return (
     <Wrapper>
       <WrappText>
@@ -27,8 +28,69 @@ const Pricing = () => {
       </WrappText>
 
       <WrappPremiumCards>
-        <Premium price={39} text="Premium" />
-        <Premium price={79} text="Premium plus" />
+        <Premium
+          price={19}
+          text="Baby gamer"
+          premiumTitles={[
+            '1 game',
+            '1 site',
+            'Up to 50k impressions per month',
+            'Real-time statistics',
+            'Design customization',
+            'Set coupons',
+            'Image Upload',
+            'Scheduling',
+            'Mobile responsive'
+          ]}
+        />
+        <Premium
+          price={35}
+          text="Junior gamer"
+          premiumTitles={[
+            '5 games',
+            '5 sites',
+            'Up to 150k impressions per month',
+            'Real-time statistics',
+            'Design customization',
+            'Set coupons',
+            'Image Upload',
+            'Scheduling',
+            'Mobile responsive'
+          ]}
+        />
+        <Premium
+          price={49}
+          text="Experience gamer"
+          premiumTitles={[
+            '5 games',
+            '5 sites',
+            'Up to 150k impressions per month',
+            'Real-time statistics',
+            'Design customization',
+            'Set coupons',
+            'Image Upload',
+            'Scheduling',
+            'Mobile responsive'
+          ]}
+        />
+        <Premium
+          price={199}
+          text="Ultra-gamer"
+          premiumTitles={[
+            '10 games',
+            '10 sites',
+            'Up to 500k impressions per month',
+            'Real-time statistics',
+            'Design customization',
+            'Set coupons',
+            'Image Upload',
+            'Scheduling',
+            'Personal assistant support',
+            'Get all new features before everyone!',
+            'Mobile responsive'
+          ]}
+        />
+        <Premium price={199} text="Enterprise" premiumTitles={title} />
       </WrappPremiumCards>
       <Img src={background} alt="background" />
       <GetStarted />

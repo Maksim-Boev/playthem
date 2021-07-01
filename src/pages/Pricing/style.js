@@ -45,6 +45,7 @@ export const Description = styled.div`
 
 export const WrappPremiumCards = styled.div`
   display: flex;
+  flex-wrap: wrap;
   width: 60%;
   min-width: 750px;
   margin-top: 5%;

@@ -9,9 +9,8 @@ import {
 } from './StyledComponents';
 
 import CheckMarkIcon from '../CheckMarkIcon';
-import premiumTitles from '../../shared/constants/premiumTitles';
 
-const Premium = ({ price, text }) => {
+const Premium = ({ price, text, premiumTitles }) => {
   return (
     <CardWrapper>
       <Wrapper>

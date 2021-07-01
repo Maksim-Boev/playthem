@@ -26,7 +26,7 @@ export const NavList = styled.ul`
   height: 40px;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
+  width: 650px;
 `;
 
 export const Link = styled(NavLink)`
