@@ -29,7 +29,7 @@ const Languages = () => {
           ))}
         </DropdownContent>
       </Dropdown>
-      <img src={flags[localStorage.getItem('lng')]} alt="flag" />
+      {flags[localStorage.getItem('lng')]}
     </Wrapper>
   );
 };

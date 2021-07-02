@@ -1,15 +1,15 @@
-import ru from '../assets/icons/flags/RU.svg';
-import fr from '../assets/icons/flags/FR.svg';
-import en from '../assets/icons/flags/US.svg';
-import de from '../assets/icons/flags/DE.svg';
-import he from '../assets/icons/flags/IL.svg';
+import { ReactComponent as Ru } from '../assets/icons/flags/RU.svg';
+import { ReactComponent as Fr } from '../assets/icons/flags/FR.svg';
+import { ReactComponent as En } from '../assets/icons/flags/US.svg';
+import { ReactComponent as De } from '../assets/icons/flags/DE.svg';
+import { ReactComponent as He } from '../assets/icons/flags/IL.svg';
 
 const flags = {
-  ru,
-  fr,
-  en,
-  de,
-  he
+  ru: <Ru />,
+  fr: <Fr />,
+  en: <En />,
+  de: <De />,
+  he: <He />
 };
 
 export default flags;
